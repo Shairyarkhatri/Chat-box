@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    background-color:aliceblue
+}
+
+.container {
+    width: 400px;
+    position:fixed;
+    bottom: 100px;
+    right: 40px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    /* box-shadow: 0 0 128px 0 black */
+                /* 0 32px 64px -48px black  */
+}
+
+.container h1 {
+    background-color: rgb(173, 26, 173);
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 1.5rem;
+
+}
+
+.container .chatbox {
+    height: 600px;
+    padding: 15px 20px 70px;
+    overflow-y: auto;
+
+}
+
+.container .chat {
+    display: flex;
+}
+
+
+.chatbox .outgoing {
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+
+.chatbox .chat p {
+    background-color: #724ae8;
+    padding: 12px 16px; 
+    border-radius: 20px;
+    max-width: 75%;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.chatbox .incoming p {
+    background-color: rgb(247, 241, 241);
+    color: black;
+    border-radius: 20px;
+}
+
+.chat-add {
+    /* position: absolute;
+    bottom: 0; */
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    padding: 5px 20px;
+    border-top: 1px solid rgb(189, 184, 184);
+}
+
+.chat-add textarea {
+    height: 50px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    resize: none;
+    padding: 16px 15px 16px 0; 
+
+}
+
+.chat-add button {
+    height: 40px;
+    width: 20%;
+    margin: 10px;
+    /* padding: 10px; */
+    color: white;
+    background-color: rgb(87, 50, 221);
+    font-size: .8rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.chat-add button:hover {
+    color: gray;
+
+}
